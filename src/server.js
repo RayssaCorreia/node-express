@@ -14,6 +14,10 @@ app.post('/', function (req, res){
     res.send('Recebendo uma soliciatação POST'); // pelo que entendi: solicitação para um post.
 })
 
+app.put('/', function (req, res){
+    res.send ('Recebi uma solicitação PUT em /user');
+})
+
 // escutando a porta 3000
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
